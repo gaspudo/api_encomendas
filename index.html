@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreio de Encomendas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h4>Sistema de Rastreio v1.0</h4>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="codigoInput" class="form-label">Código de Rastreio:</label>
+                    <input type="text" class="form-control" id="codigoInput" placeholder="Ex: BR123">
+                </div>
+                <button onclick="buscarEncomenda()" class="btn btn-primary w-100">Consultar</button>
+                <hr>
+                <div id="areaMensagens"></div>
+                <div id="areaResultado" class="d-none mt-3 p-3 border rounded bg-white">
+                    <h5>Status: <span id="resStatus" class="fw-bold text-success"></span></h5>
+                    <p>Local: <span id="resLocal"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>    
+</body>
+</html>
